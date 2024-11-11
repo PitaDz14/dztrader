@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحليل NEIRO/USDT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>تحليل NEIRO/USDT</h1>
+            <div class="market-info">
+                <span id="current-price">جاري التحميل...</span>
+                <span id="price-change">0.00%</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="chart-container">
+                <div id="chart"></div>
+            </div>
+
+            <div class="trading-panel">
+                <div class="signal-box">
+                    <h2>إشارة التداول</h2>
+                    <div id="trading-signal">
+                        <span class="signal-status">محايد</span>
+                        <div class="signal-details">
+                            <div>السعر الحالي: <span id="live-price">0.00</span></div>
+                            <div>هدف البيع: <span id="target-price">0.00</span></div>
+                            <div>وقف الخسارة: <span id="stop-loss">0.00</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicators">
+                    <h2>المؤشرات الفنية</h2>
+                    <div class="indicator">
+                        <span>RSI (14)</span>
+                        <div id="rsi-value">0</div>
+                    </div>
+                    <div class="indicator">
+                        <span>MACD</span>
+                        <div id="macd-value">0</div>
+                    </div>
+                    <div class="indicator">
+                        <span>حجم التداول</span>
+                        <div id="volume-value">0</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
